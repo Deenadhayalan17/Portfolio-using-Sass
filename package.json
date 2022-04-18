@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-using-sass",
+  "version": "1.0.0",
+  "description": "website using HTML,Sass,Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass app.scss app.css --no-source-map"
+  },
+  "author": "Deenadhayalan D",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "D": "^1.0.0",
+    "sass": "^1.50.0"
+  }
+}
+  
