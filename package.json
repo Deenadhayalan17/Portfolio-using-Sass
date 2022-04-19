@@ -4,7 +4,7 @@
   "description": "website using HTML,Sass,Javascript",
   "main": "index.js",
   "scripts": {
-    "test": "sass app.scss app.css --no-source-map"
+    "test": "sass app.scss app.css --no-source-map --watch"
   },
   "author": "Deenadhayalan D",
   "license": "ISC",
