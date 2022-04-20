@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as * ;
+
+.container{
+    width: 100%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    max-width: $maxwidth;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width:1200px){
+    body{
+        background: yellow;
+    }
+
+}

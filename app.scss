@@ -1,6 +1,11 @@
+//base module
 @use  "scss/base/typegraphy";
 @use  "scss/base/reset";
-@use "scss/components/nav"
+//component module
+@use "scss/components/nav";
+
+//layout module
+@use "scss/layout/grid";
 
 
 

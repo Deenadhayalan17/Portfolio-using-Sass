@@ -32,6 +32,8 @@ p {
 .nav__wrapper {
   width: 100%;
   max-width: 120rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,9 +48,9 @@ p {
 }
 .nav__wrapper__logo__a:after {
   position: absolute;
-  content: "";
   right: -1rem;
   bottom: 0.6rem;
+  content: "";
   width: 0.8rem;
   height: 0.8rem;
   background-color: #10B981;
@@ -73,4 +75,19 @@ p {
 }
 .nav__wrapper__ul__li:first-child .nav__wrapper__ul__li__a {
   color: #10B981;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: yellow;
+  }
 }
