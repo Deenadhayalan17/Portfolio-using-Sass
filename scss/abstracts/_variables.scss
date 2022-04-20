@@ -1,5 +1,6 @@
-$gutter : 1.5rem;
-$maxwidth : 120rem;
+$gutter: 1.5rem;
+$maxWidth: 120rem;
+$padding-y: 8rem;
 
 
 //xlg 1200 and above
@@ -7,4 +8,11 @@ $maxwidth : 120rem;
 // md 992- 769
 //sm 768-481
 //xsm 480 and below 
-$breakpoint:("xlg":1200px,"lg":1200px,"md":992,"sm":768,"xsm":480px);
+
+$breakPoints: (
+  "xlg": 1200px,
+  "lg": 1200px,
+  "md": 992px,
+  "sm": 768px,
+  "xsm": 480px,
+);
