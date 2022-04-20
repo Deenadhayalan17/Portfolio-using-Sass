@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as * ;
+@use "../abstracts/mixins" as *;
 
 .container{
     width: 100%;
@@ -9,9 +10,17 @@
     margin-right: auto;
 }
 
-@media(min-width:1200px){
-    body{
-        background: yellow;
-    }
 
+
+@each $key,$value in $breakpoint{
+    @if $key ==xlg{
+        @media(min-width : $value){
+            @include column($key)
+        }
+    }
+    @else{
+        @media(max-width : $value){
+            @include column($key)
+        }        
+    }
 }
