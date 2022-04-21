@@ -157,7 +157,7 @@ body {
   content: "";
   width: 50%;
   height: calc(100vh - 7rem);
-  background: url("/assests/images/deena_pic1.jpeg");
+  background: url("/assests/images/deena_pic2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 15%;
@@ -288,6 +288,115 @@ body {
 }
 .btn-dark:focus {
   outline: 0.4rem solid rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal__wrapper {
+  display: flex;
+  width: 75rem;
+  height: 45rem;
+  background: #fff;
+  position: relative;
+  animation: modalAnimate 0.5s ease-in-out;
+}
+@keyframes modalAnimate {
+  from {
+    transform: translateY(-4rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .modal__wrapper {
+    width: 90%;
+    height: auto;
+  }
+}
+.modal__wrapper__close {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  display: block;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.modal__wrapper__image {
+  width: 50%;
+  height: 45rem;
+}
+@media (max-width: 768px) {
+  .modal__wrapper__image {
+    display: none;
+  }
+}
+.modal__wrapper__image__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal__wrapper__contents {
+  width: 50%;
+  padding: 5rem 2rem;
+}
+@media (max-width: 768px) {
+  .modal__wrapper__contents {
+    width: 100%;
+  }
+}
+.modal__wrapper__contents__p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+  line-height: 2.5rem;
+}
+@media (max-width: 480px) {
+  .modal__wrapper__contents__p {
+    font-size: 1.2rem;
+  }
+}
+.modal__wrapper__contents__block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  border-bottom: 0.1rem dashed #E5E7EB;
+}
+.modal__wrapper__contents__block__left {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #000;
+}
+@media (max-width: 480px) {
+  .modal__wrapper__contents__block__left {
+    font-size: 1.2rem;
+  }
+}
+.modal__wrapper__contents__block__right {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #4B5563;
+}
+@media (max-width: 480px) {
+  .modal__wrapper__contents__block__right {
+    font-size: 1.1rem;
+  }
 }
 
 .container {
@@ -620,4 +729,26 @@ body {
     flex-basis: 100%;
     max-width: 100%;
   }
+}
+.heading {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #000;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+}
+.heading::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 10rem;
+  height: 0.5rem;
+  background: #10B981;
+  opacity: 0.4;
 }

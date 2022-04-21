@@ -5,9 +5,13 @@
 @use "scss/components/nav";
 @use "scss/components/header";
 @use "scss/components/buttons";
+@use "scss/components/modal";
 
 //layout module
 @use "scss/layout/grid";
+
+//utils
+@use "scss/utils/utils.scss";
 
 
 

@@ -19,3 +19,20 @@ const typeWrite = () => {
 	}
 }
 typeWrite();
+
+
+// open / close modal
+
+const modalBtn = document.querySelector('.modal-btn');
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__wrapper__close')
+
+// open modal
+modalBtn.addEventListener('click', () => {
+	modal.style.display = "flex";
+})
+
+// close modal
+modalClose.addEventListener('click', () => {
+	modal.style.display = "none";
+})
