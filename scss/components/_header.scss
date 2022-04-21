@@ -8,11 +8,13 @@
     content: "";
     width: 50%;
     height: calc(100vh - 7rem);
-    background: url("/assests/images/deena_pic.jpeg");
+    background: url("/assests/images/deena_pic1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 15%;
     clip-path: polygon(20% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 100%);
+   // clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    //clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     @include responsive(md) {
       width: 100%;
       height: calc(50vh - 7rem);
