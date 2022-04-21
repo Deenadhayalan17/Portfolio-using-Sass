@@ -3,6 +3,8 @@
 @use  "scss/base/reset";
 //component module
 @use "scss/components/nav";
+@use "scss/components/header";
+@use "scss/components/buttons";
 
 //layout module
 @use "scss/layout/grid";

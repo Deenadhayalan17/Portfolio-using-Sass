@@ -146,6 +146,150 @@ body {
   }
 }
 
+.header {
+  margin-top: 7rem;
+  position: relative;
+}
+.header::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 50%;
+  height: calc(100vh - 7rem);
+  background: url("/assests/images/deena_pic.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 15%;
+  clip-path: polygon(20% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 100%);
+}
+@media (max-width: 992px) {
+  .header::after {
+    width: 100%;
+    height: calc(50vh - 7rem);
+    clip-path: none;
+  }
+}
+.header__data {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .header__data {
+    height: calc(50vh - 3rem);
+    margin-top: calc(50vh - 7rem);
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .header__data {
+    justify-content: flex-start;
+  }
+}
+.header__data__contents__top {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #000;
+}
+@media (max-width: 480px) {
+  .header__data__contents__top {
+    font-size: 1.6rem;
+  }
+}
+.header__data__contents__heading {
+  margin-top: 1.5rem;
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 4.5rem;
+  background: linear-gradient(45deg, #000 50%, #10B981 50%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: capitalize;
+}
+@media (max-width: 992px) {
+  .header__data__contents__heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .header__data__contents__heading {
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    margin-top: 1rem;
+    font-weight: 800;
+  }
+}
+@media (max-width: 480px) {
+  .header__data__contents__heading {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+}
+.header__data__contents__bottom {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .header__data__contents__bottom {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .header__data__contents__bottom {
+    font-size: 1.7rem;
+  }
+}
+.header__data__contents__links {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  height: 4.3rem;
+  line-height: 4.3rem;
+  padding: 0 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-transform: capitalize;
+  transition: outline 0.3s linear;
+}
+@media (max-width: 480px) {
+  .btn {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    font-size: 1.2rem;
+  }
+}
+.btn-default {
+  background: #10B981;
+  color: #fff;
+}
+.btn-default:focus {
+  outline: 0.4rem solid #D1FAE5;
+}
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+.btn-dark:focus {
+  outline: 0.4rem solid rgba(0, 0, 0, 0.2);
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
