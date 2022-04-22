@@ -399,6 +399,122 @@ body {
   }
 }
 
+.about {
+  padding: 8rem 0;
+  background: linear-gradient(to right, #ECFDF5 25%, #fff 50%);
+}
+.about__image {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .about__image {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .about__image {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media (max-width: 480px) {
+  .about__image {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about__image__small {
+  position: absolute;
+  top: -3rem;
+  left: -3rem;
+  width: 15rem;
+  height: 15rem;
+}
+@media (max-width: 992px) {
+  .about__image__small {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media (max-width: 480px) {
+  .about__image__small {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+.about__image__small img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.7rem solid #ECFDF5;
+}
+.about__info {
+  margin-top: 1.5rem;
+}
+.about__info__message {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  color: #000;
+}
+.about__info__block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem dashed #D1D5DB;
+}
+.about__info__block__left {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
+}
+@media (max-width: 480px) {
+  .about__info__block__left {
+    font-weight: 500;
+  }
+}
+.about__info__block__right {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #374151;
+  text-transform: capitalize;
+}
+.about__info__socials {
+  margin-top: 2rem;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__info__socials__circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #34D399;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.about__info__socials__circle:first-child {
+  margin-left: 0;
+}
+.about__info__socials__circle i {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
@@ -751,4 +867,17 @@ body {
   height: 0.5rem;
   background: #10B981;
   opacity: 0.4;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
