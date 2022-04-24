@@ -515,6 +515,96 @@ body {
   color: #fff;
 }
 
+.education {
+  padding: 8rem 0;
+}
+.education--row1 [class^=col-]:nth-child(2) {
+  transform: skewY(8deg);
+}
+@media (max-width: 1200px) {
+  .education--row1 [class^=col-]:nth-child(2) {
+    transform: none;
+  }
+}
+.education--row1 [class^=col-]:nth-child(4) {
+  transform: skewY(8deg);
+}
+@media (max-width: 1200px) {
+  .education--row1 [class^=col-]:nth-child(4) {
+    transform: none;
+  }
+}
+.education--row2 [class^=col-]:nth-child(1) {
+  transform: skewY(-8deg);
+}
+@media (max-width: 1200px) {
+  .education--row2 [class^=col-]:nth-child(1) {
+    transform: none;
+  }
+}
+.education--row2 [class^=col-]:nth-child(3) {
+  transform: skewY(-8deg);
+}
+@media (max-width: 1200px) {
+  .education--row2 [class^=col-]:nth-child(3) {
+    transform: none;
+  }
+}
+.education__card {
+  width: 100%;
+  background: linear-gradient(110deg, #fff 50%, #ECFDF5 50%);
+  padding: 1.5rem;
+  box-shadow: -3rem 3rem 2rem -3rem rgba(52, 211, 153, 0.2);
+  border-radius: 0.3rem;
+}
+.education__card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #000 20%, #10B981 20%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.education__card__block {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.education__card__block__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.education__card__block__left--house {
+  background: #D1FAE5;
+}
+.education__card__block__left--house i {
+  color: #059669;
+  font-size: 1.6rem;
+}
+.education__card__block__left--calendar {
+  background: #E5E7EB;
+}
+.education__card__block__left--calendar i {
+  color: #374151;
+  font-size: 1.6rem;
+}
+.education__card__block__right {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+  flex: 1;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
